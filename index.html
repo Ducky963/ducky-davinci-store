@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ducky DaVinci paint-by-numbers kits. Pick your favourite design and order on WhatsApp.">
+  <title>Ducky DaVinci | Make Art, Your Way</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">D</span><span>DUCKY <b>DaVinci</b><small>MAKE ART, YOUR WAY</small></span></a>
+  <nav><a href="#shop" data-en="Shop" data-ar="تسوق">Shop</a><a href="#about" data-en="Our Story" data-ar="عنّا">Our Story</a></nav>
+  <div class="actions"><button class="lang" id="langBtn">عربي</button><button class="cart-button" id="cartOpen">Bag <span id="cartCount">0</span></button></div>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow" data-en="A LITTLE COLOR GOES A LONG WAY" data-ar="شوية ألوان يفرقوا كتير">A LITTLE COLOR GOES A LONG WAY</span>
+      <h1 data-en="Your next<br><em>masterpiece</em><br>starts here." data-ar="لوحتك<br><em>الفنية</em><br>بتبدأ من هنا.">Your next<br><em>masterpiece</em><br>starts here.</h1>
+      <p data-en="Discover the joy of painting, one number at a time." data-ar="اكتشف متعة الرسم، لون ورا لون ورقم ورا رقم.">Discover the joy of painting, one number at a time.</p>
+      <a class="primary-btn" href="#shop" data-en="Explore the kits ↗" data-ar="اكتشف المجموعات ↗">Explore the kits ↗</a>
+      <div class="hero-note"><span>✦</span><span data-en="Made for curious minds & creative hands" data-ar="للعقول الفضولية والأيادي المبدعة">Made for curious minds & creative hands</span></div>
+    </div>
+    <div class="hero-art">
+      <div class="blob blob-one"></div><div class="blob blob-two"></div>
+      <div class="art-card"><div class="art-top"><span>DUCKY DAVINCI</span><span>✳</span></div><div class="paint-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="art-bottom">PAINT YOUR HAPPY PLACE</div></div>
+      <span class="sticker sticker-one">CREATE<br>HAPPINESS ✦</span><span class="sticker sticker-two">100%<br>YOUR ART</span>
+    </div>
+  </section>
+  <section class="ticker"><span>PAINT • RELAX • CREATE • REPEAT • PAINT • RELAX • CREATE • REPEAT •</span></section>
+  <section class="shop-section" id="shop">
+    <div class="section-heading"><div><span class="eyebrow" data-en="THE COLLECTION" data-ar="مجموعتنا">THE COLLECTION</span><h2 data-en="Find your <em>favourite.</em>" data-ar="اختار <em>تصميمك المفضل.</em>">Find your <em>favourite.</em></h2></div><p data-en="Pick a design, grab your colours, and let creativity take over." data-ar="اختار تصميمك، جهّز ألوانك، وسيب الإبداع ياخدك.">Pick a design, grab your colours, and let creativity take over.</p></div>
+    <div class="filters"><button class="filter active" data-filter="all" data-en="All kits" data-ar="كل التصميمات">All kits</button><span id="productTotal">20 DESIGNS</span></div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+  <section class="about" id="about"><div class="about-shape">✳</div><div><span class="eyebrow" data-en="A CREATIVE LITTLE WORLD" data-ar="عالم صغير من الإبداع">A CREATIVE LITTLE WORLD</span><h2 data-en="Not just a painting.<br><em>A moment for you.</em>" data-ar="مش مجرد رسمة.<br><em>دي لحظة ليك.</em>">Not just a painting.<br><em>A moment for you.</em></h2><p data-en="Ducky DaVinci makes creativity easy and enjoyable. Follow the numbers, add a little colour, and watch your own artwork come to life." data-ar="Ducky DaVinci بيخلي الإبداع سهل وممتع. امشي ورا الأرقام، ضيف الألوان، وشوف لوحتك بتتحول لعمل فني بإيدك.">Ducky DaVinci makes creativity easy and enjoyable. Follow the numbers, add a little colour, and watch your own artwork come to life.</p></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">D</span><span>DUCKY <b>DaVinci</b><small>MAKE ART, YOUR WAY</small></span></a><span>© <span id="year"></span> Ducky DaVinci</span><span data-en="Made with a little extra colour." data-ar="اتعمل بحب وألوان كتير.">Made with a little extra colour.</span></footer>
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head"><h2 data-en="Your bag" data-ar="سلة مشترياتك">Your bag</h2><button id="cartClose" class="close">×</button></div>
+  <div id="cartItems" class="cart-items"><p class="empty" data-en="Your bag is waiting for some colour." data-ar="السلة مستنية شوية ألوان.">Your bag is waiting for some colour.</p></div>
+  <div class="cart-foot"><div class="total-line"><span data-en="Subtotal" data-ar="الإجمالي">Subtotal</span><b id="subtotal">To be confirmed</b></div><button class="primary-btn full" id="checkoutBtn" data-en="Continue to order ↗" data-ar="كمّل بيانات الطلب ↗">Continue to order ↗</button><small data-en="No online payment. You will confirm your order through WhatsApp." data-ar="مفيش دفع أونلاين. تأكيد الطلب هيكون عن طريق واتساب.">No online payment. You will confirm your order through WhatsApp.</small></div>
+</aside>
+<div class="modal" id="checkoutModal">
+  <div class="modal-head"><div><span class="eyebrow">ALMOST THERE!</span><h2 data-en="Where should we send it?" data-ar="نبعت الأوردر فين؟">Where should we send it?</h2></div><button class="close" id="modalClose">×</button></div>
+  <form id="orderForm">
+    <label><span data-en="Full name" data-ar="الاسم بالكامل">Full name</span><input name="name" required placeholder="Your name / اسمك"></label>
+    <label><span data-en="Mobile number" data-ar="رقم الموبايل">Mobile number</span><input name="phone" required inputmode="tel" placeholder="01xxxxxxxxx"></label>
+    <div class="form-row"><label><span data-en="Governorate" data-ar="المحافظة">Governorate</span><input name="governorate" required></label><label><span data-en="Area" data-ar="المنطقة">Area</span><input name="area" required></label></div>
+    <label><span data-en="Full address" data-ar="العنوان بالتفصيل">Full address</span><textarea name="address" required rows="2"></textarea></label>
+    <label><span data-en="Notes (optional)" data-ar="ملاحظات (اختياري)">Notes (optional)</span><textarea name="notes" rows="2"></textarea></label>
+    <button class="primary-btn full" type="submit" data-en="Send order on WhatsApp ↗" data-ar="ابعت الطلب على واتساب ↗">Send order on WhatsApp ↗</button>
+    <p class="form-hint" data-en="Your WhatsApp app will open with your order details ready to send." data-ar="واتساب هيفتح برسالة فيها تفاصيل طلبك جاهزة للإرسال.">Your WhatsApp app will open with your order details ready to send.</p>
+  </form>
+</div>
+<script src="products.js"></script><script src="app.js"></script>
+</body></html>
