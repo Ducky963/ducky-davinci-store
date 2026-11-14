@@ -1,58 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ducky DaVinci paint-by-numbers kits. Pick your favourite design and order on WhatsApp.">
-  <title>Ducky DaVinci | Make Art, Your Way</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Ducky Da Vinci creative paint-by-numbers kits — Every colour tells a story.">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <title>Ducky Da Vinci — Painting Kits</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="#"><span class="brand-mark">D</span><span>DUCKY <b>DaVinci</b><small>MAKE ART, YOUR WAY</small></span></a>
-  <nav><a href="#shop" data-en="Shop" data-ar="تسوق">Shop</a><a href="#about" data-en="Our Story" data-ar="عنّا">Our Story</a></nav>
-  <div class="actions"><button class="lang" id="langBtn">عربي</button><button class="cart-button" id="cartOpen">Bag <span id="cartCount">0</span></button></div>
+  <a class="brand" href="#">
+    <img src="images/logo.jpg" alt="Ducky Da Vinci Logo" class="brand-logo">
+    <span>DUCKY <b>Da Vinci</b><small>PAINTING KITS</small></span>
+  </a>
+  <nav>
+    <a href="#shop" data-en="Shop Kits" data-ar="تسوق اللوحات">Shop Kits</a>
+    <a href="#inside" data-en="What's Inside" data-ar="محتويات العبوة">What's Inside</a>
+    <a href="#guide" data-en="How to Paint" data-ar="طريقة الرسم">How to Paint</a>
+    <a href="#story" data-en="Why Paint?" data-ar="فوائد الرسم">Why Paint?</a>
+  </nav>
+  <div class="head-actions">
+    <button id="language" class="lang">عربي</button>
+    <button id="openCart" class="cart-trigger">
+      <span data-en="Your bag" data-ar="السلة">Your bag</span> <b id="cartCount">0</b>
+    </button>
+  </div>
 </header>
+
 <main>
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-copy">
-      <span class="eyebrow" data-en="A LITTLE COLOR GOES A LONG WAY" data-ar="شوية ألوان يفرقوا كتير">A LITTLE COLOR GOES A LONG WAY</span>
-      <h1 data-en="Your next<br><em>masterpiece</em><br>starts here." data-ar="لوحتك<br><em>الفنية</em><br>بتبدأ من هنا.">Your next<br><em>masterpiece</em><br>starts here.</h1>
-      <p data-en="Discover the joy of painting, one number at a time." data-ar="اكتشف متعة الرسم، لون ورا لون ورقم ورا رقم.">Discover the joy of painting, one number at a time.</p>
-      <a class="primary-btn" href="#shop" data-en="Explore the kits ↗" data-ar="اكتشف المجموعات ↗">Explore the kits ↗</a>
-      <div class="hero-note"><span>✦</span><span data-en="Made for curious minds & creative hands" data-ar="للعقول الفضولية والأيادي المبدعة">Made for curious minds & creative hands</span></div>
+      <span class="eyebrow"><i></i><span data-en="EVERY COLOUR TELLS A TALE" data-ar="كل لون بيحكي حكاية">EVERY COLOUR TELLS A TALE</span></span>
+      <h1 data-en="Make room<br>for <em>colour.</em>" data-ar="افسح مكان<br>للـ<em>ألوان.</em>">Make room<br>for <em>colour.</em></h1>
+      <p data-en="Unplug, unwind, and turn little numbered spaces into something wonderfully yours with Ducky Da Vinci Painting Kits." data-ar="ابعد عن دوشة اليوم، استرخى، وحوّل المساحات المرقمة للوحة فنية من إبداعك مع مجموعات Ducky Da Vinci.">Unplug, unwind, and turn little numbered spaces into something wonderfully yours with Ducky Da Vinci Painting Kits.</p>
+      <div class="hero-cta-row">
+        <a class="btn dark-btn" href="#shop" data-en="Explore the 10 Kits ↗" data-ar="استكشف الـ 10 لوحات ↗">Explore the 10 Kits ↗</a>
+        <a class="btn outline-btn" href="#inside" data-en="See What's Inside" data-ar="شوف محتويات العبوة">See What's Inside</a>
+      </div>
+      <div class="micro-proof">✦ <span data-en="Calming effect on body & mind · Stress reduction · Enhanced focus" data-ar="تأثير مريح للجسم والعقل · تقليل التوتر · تركيز أعلى">Calming effect on body &amp; mind · Stress reduction · Enhanced focus</span></div>
     </div>
-    <div class="hero-art">
-      <div class="blob blob-one"></div><div class="blob blob-two"></div>
-      <div class="art-card"><div class="art-top"><span>DUCKY DAVINCI</span><span>✳</span></div><div class="paint-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="art-bottom">PAINT YOUR HAPPY PLACE</div></div>
-      <span class="sticker sticker-one">CREATE<br>HAPPINESS ✦</span><span class="sticker sticker-two">100%<br>YOUR ART</span>
+
+    <div class="hero-art-wrap">
+      <div class="burst">✳</div>
+      <div class="hero-visual-stack">
+        <div class="poster-card main-logo-card">
+          <img src="images/logo.jpg" alt="Ducky Da Vinci Mascot">
+        </div>
+        <div class="poster-card tube-card">
+          <img src="images/packaging-tubes.jpg" alt="Ducky Da Vinci Cylindrical Packaging">
+          <small data-en="SIGNATURE TUBE PACKAGING" data-ar="عبوة أسطوانية مميزة">SIGNATURE TUBE PACKAGING</small>
+        </div>
+      </div>
+      <div class="sticker">PAINT<br>YOUR<br>STORY ✦</div>
     </div>
   </section>
-  <section class="ticker"><span>PAINT • RELAX • CREATE • REPEAT • PAINT • RELAX • CREATE • REPEAT •</span></section>
-  <section class="shop-section" id="shop">
-    <div class="section-heading"><div><span class="eyebrow" data-en="THE COLLECTION" data-ar="مجموعتنا">THE COLLECTION</span><h2 data-en="Find your <em>favourite.</em>" data-ar="اختار <em>تصميمك المفضل.</em>">Find your <em>favourite.</em></h2></div><p data-en="Pick a design, grab your colours, and let creativity take over." data-ar="اختار تصميمك، جهّز ألوانك، وسيب الإبداع ياخدك.">Pick a design, grab your colours, and let creativity take over.</p></div>
-    <div class="filters"><button class="filter active" data-filter="all" data-en="All kits" data-ar="كل التصميمات">All kits</button><span id="productTotal">20 DESIGNS</span></div>
-    <div class="product-grid" id="productGrid"></div>
+
+  <div class="ticker">EVERY COLOUR TELLS A TALE • MAKE • PAINT • RELAX • CREATE • DUCKY DA VINCI •</div>
+
+  <!-- SHOP SECTION -->
+  <section class="section shop" id="shop">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow-text" data-en="THE DUCKY COLLECTION · 10 DESIGNS" data-ar="مجموعة داكي · 10 تصميمات">THE DUCKY COLLECTION · 10 DESIGNS</span>
+        <h2 data-en="Find your <em>kind of art.</em>" data-ar="اختار <em>فنّك المفضل.</em>">Find your <em>kind of art.</em></h2>
+      </div>
+      <p data-en="Choose a design that speaks to your soul. Available in 30×40 cm (10 colours) and 40×60 / 50×80 cm (16 colours)." data-ar="اختار التصميم اللي بيعبر عنك. متوفر بمقاس 30×40 سم (10 ألوان) ومقاسات 40×60 و 50×80 سم (16 لون).">Choose a design that speaks to your soul. Available in 30×40 cm (10 colours) and 40×60 / 50×80 cm (16 colours).</p>
+    </div>
+    <div id="categories" class="category-list"></div>
+    <div id="products" class="products"></div>
+    <p id="empty" class="empty" hidden>No products in this category yet.</p>
   </section>
-  <section class="about" id="about"><div class="about-shape">✳</div><div><span class="eyebrow" data-en="A CREATIVE LITTLE WORLD" data-ar="عالم صغير من الإبداع">A CREATIVE LITTLE WORLD</span><h2 data-en="Not just a painting.<br><em>A moment for you.</em>" data-ar="مش مجرد رسمة.<br><em>دي لحظة ليك.</em>">Not just a painting.<br><em>A moment for you.</em></h2><p data-en="Ducky DaVinci makes creativity easy and enjoyable. Follow the numbers, add a little colour, and watch your own artwork come to life." data-ar="Ducky DaVinci بيخلي الإبداع سهل وممتع. امشي ورا الأرقام، ضيف الألوان، وشوف لوحتك بتتحول لعمل فني بإيدك.">Ducky DaVinci makes creativity easy and enjoyable. Follow the numbers, add a little colour, and watch your own artwork come to life.</p></div></section>
+
+  <!-- WHAT'S INSIDE & PACKAGING SHOWCASE -->
+  <section class="section inside-section" id="inside">
+    <div class="inside-grid">
+      <div class="inside-media">
+        <img src="images/packaging-tubes.jpg" alt="Ducky Da Vinci Painting Kit Tube" class="tube-showcase">
+        <div class="inside-badge">
+          <img src="images/logo.jpg" alt="Ducky Da Vinci">
+          <div>
+            <strong data-en="All-in-One Creative Tube" data-ar="عبوة إبداعية متكاملة">All-in-One Creative Tube</strong>
+            <span data-en="Ready to gift or paint right away" data-ar="جاهزة للإهداء أو الرسم فوراً">Ready to gift or paint right away</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="inside-copy">
+        <span class="eyebrow-text" data-en="UNBOX THE CREATIVITY" data-ar="افتح صندوق الإبداع">UNBOX THE CREATIVITY</span>
+        <h2 data-en="What's <em>Inside?</em>" data-ar="إيه اللي جوه <em>العبوة؟</em>">What's <em>Inside?</em></h2>
+        <p data-en="Every Ducky Da Vinci tube is packed with everything you need to start painting immediately—no extra supplies required." data-ar="كل عبوة من Ducky Da Vinci فيها كل الأدوات اللي هتحتاجها عشان تبدأ رسم فوراً بدون أي أدوات إضافية.">Every Ducky Da Vinci tube is packed with everything you need to start painting immediately—no extra supplies required.</p>
+        <ul class="inside-list">
+          <li>
+            <span class="check-icon">🎨</span>
+            <div>
+              <strong data-en="1 Numbered Canvas" data-ar="لوحة كانفس مرقمة">1 Numbered Canvas</strong>
+              <span data-en="High-quality pre-printed numbered canvas (30×40, 40×60, or 50×80 cm)" data-ar="كانفس عالي الجودة مطبوع بأرقام واضحة (30×40 أو 40×60 أو 50×80 سم)">High-quality pre-printed numbered canvas (30×40, 40×60, or 50×80 cm)</span>
+            </div>
+          </li>
+          <li>
+            <span class="check-icon">🧪</span>
+            <div>
+              <strong data-en="Acrylic Paints (10 or 16 Colours)" data-ar="ألوان أكريليك (10 أو 16 لون)">Acrylic Paints (10 or 16 Colours)</strong>
+              <span data-en="Rich, vibrant numbered acrylic paint pots matched to your design" data-ar="عبوات ألوان أكريليك زاهية ومرقمة مطابقة تماماً لتصميم لوحتك">Rich, vibrant numbered acrylic paint pots matched to your design</span>
+            </div>
+          </li>
+          <li>
+            <span class="check-icon">🖌️</span>
+            <div>
+              <strong data-en="2 Paint Brushes" data-ar="فرشتين رسم">2 Paint Brushes</strong>
+              <span data-en="Precision tip for small details and broader tip for larger areas" data-ar="فرشاة دقيقة للتفاصيل الصغيرة وفرشاة للمساحات الأكبر">Precision tip for small details and broader tip for larger areas</span>
+            </div>
+          </li>
+          <li>
+            <span class="check-icon">📱</span>
+            <div>
+              <strong data-en="Color Guide & QR Zoom Code" data-ar="دليل الألوان وكود QR للتكبير">Color Guide &amp; QR Zoom Code</strong>
+              <span data-en="Reference sheet plus a QR code to zoom in and see small numbers clearly" data-ar="ورقة مرجعية للألوان مع كود QR لتكبير اللوحة ورؤية الأرقام الصغيرة بوضوح">Reference sheet plus a QR code to zoom in and see small numbers clearly</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO PAINT & TIPS & CARE -->
+  <section class="section guide-section" id="guide">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow-text" data-en="STEP-BY-STEP ARTIST GUIDE" data-ar="دليل الرسام خطوة بخطوة">STEP-BY-STEP ARTIST GUIDE</span>
+        <h2 data-en="How to <em>Paint</em> &amp; Care" data-ar="طريقة <em>الرسم</em> والعناية بالألوان">How to <em>Paint</em> &amp; Care</h2>
+      </div>
+      <p data-en="Take your time! You don't have to finish in one day. Enjoy and have fun." data-ar="خد وقتك! مش لازم تخلص اللوحة في يوم واحد. استمتع بالرحلة!">Take your time! You don't have to finish in one day. Enjoy and have fun.</p>
+    </div>
+
+    <div class="guide-grid">
+      <div class="guide-card-box">
+        <h3 data-en="🖌️ How to Paint" data-ar="🖌️ خطوات الرسم">🖌️ How to Paint</h3>
+        <ul class="guide-bullets">
+          <li data-en="Place the canvas on a flat surface." data-ar="ضع لوحة الكانفس على سطح مستوٍ.">Place the canvas on a flat surface.</li>
+          <li data-en="Start by painting the small and narrow areas first, using the tip of the brush." data-ar="ابدأ بتلوين المساحات الصغيرة والضيقة أولاً باستخدام طرف الفرشاة.">Start by painting the small and narrow areas first, using the tip of the brush.</li>
+          <li data-en="Close the paint pot tightly after use to prevent dryness." data-ar="أغلق عبوة اللون بإحكام بعد الاستخدام لمنع جفافها.">Close the paint pot tightly after use to prevent dryness.</li>
+          <li data-en="Rinse your brush in water between colors and wipe it on a tissue until no color remains." data-ar="اغسل الفرشاة بالماء بين كل لون وآخر وجففها بمنديل حتى يزول اللون تماماً.">Rinse your brush in water between colors and wipe it on a tissue until no color remains.</li>
+          <li data-en="Right-handed: paint from left to right. Left-handed: paint from right to left to prevent smudging." data-ar="إذا كنت تستخدم يدك اليمنى: ارسم من اليسار لليمين. وإذا كنت أعسر: ارسم من اليمين لليسار لتجنب تلطيخ الألوان.">Right-handed: paint from left to right. Left-handed: paint from right to left to prevent smudging.</li>
+          <li data-en="Made a mistake? Don't worry! Let the paint dry completely, then paint over it with the correct color." data-ar="أخطأت في لون؟ لا تقلق! اترك اللون يجف تماماً ثم أعد التلوين فوقه باللون الصحيح.">Made a mistake? Don't worry! Let the paint dry completely, then paint over it with the correct color.</li>
+          <li data-en="If the paint is too thick or dried up, add a drop or two of water and mix well." data-ar="إذا كان اللون سميكاً أو جافاً قليلاً، أضف قطرة أو قطرتين من الماء واخلطه جيداً.">If the paint is too thick or dried up, add a drop or two of water and mix well.</li>
+        </ul>
+      </div>
+
+      <div class="guide-card-box tips-box">
+        <h3 data-en="✨ Tips & Care" data-ar="✨ نصائح مهمة">✨ Tips &amp; Care</h3>
+        <ul class="guide-bullets">
+          <li data-en="Keep your brushes clean after every session." data-ar="حافظ على نظافة الفرش بعد كل جلسة رسم.">Keep your brushes clean after every session.</li>
+          <li data-en="Work in a well-lit area for the best view of numbers." data-ar="ارسم في مكان ذي إضاءة جيدة لرؤية الأرقام بوضوح.">Work in a well-lit area for the best view of numbers.</li>
+          <li data-en="Protect your clothes and workspace before starting." data-ar="احمِ ملابسك ومساحة العمل قبل البدء.">Protect your clothes and workspace before starting.</li>
+          <li data-en="Save extra paint for final touchups." data-ar="احتفظ ببعض اللون الإضافي للمسات النهائية.">Save extra paint for final touchups.</li>
+          <li data-en="Acrylic paints dry quickly — keep lids closed when not in use." data-ar="ألوان الأكريليك تجف بسرعة — أغلق العبوات دائماً أثناء عدم الاستخدام.">Acrylic paints dry quickly — keep lids closed when not in use.</li>
+          <li data-en="Use the QR code inside your kit to zoom in and see small numbers clearly." data-ar="استخدم كود QR المرفق لتكبير التصميم ورؤية الأرقام الصغيرة بوضوح.">Use the QR code inside your kit to zoom in and see small numbers clearly.</li>
+        </ul>
+        <div class="yay-banner" data-en="Take your time! Enjoy and have fun. Yay! You did it! 🎉" data-ar="خد وقتك واستمتع بالرسم.. مبروك خلصت لوحتك! 🎉">Take your time! Enjoy and have fun. Yay! You did it! 🎉</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORY / BENEFITS -->
+  <section class="story section" id="story">
+    <div class="story-logo-wrap">
+      <img src="images/logo.jpg" alt="Ducky Da Vinci" class="story-logo">
+    </div>
+    <div>
+      <span class="eyebrow-text" data-en="MINDFUL CREATIVITY" data-ar="إبداع يريح البال">MINDFUL CREATIVITY</span>
+      <h2 data-en="Calming effect on <em>body &amp; mind.</em>" data-ar="تأثير مريح <em>للجسم والعقل.</em>">Calming effect on <em>body &amp; mind.</em></h2>
+      <p data-en="One of the main benefits of painting by numbers is the calming effect on body and mind. Other benefits include stress reduction, enhanced focus, and overall mental well-being. Ducky Da Vinci kits harness structured, creative activities to foster relaxation and improve mental health." data-ar="من أهم فوائد الرسم بالأرقام تأثيره المهدئ على الجسم والعقل، بالإضافة إلى تقليل التوتر، تعزيز التركيز، وتحسين الصحة النفسية والذهنية. مجموعات Ducky Da Vinci بتقدملك نشاط إبداعي منظم يساعدك على الاسترخاء وتجديد طاقتك.">One of the main benefits of painting by numbers is the calming effect on body and mind. Other benefits include stress reduction, enhanced focus, and overall mental well-being. Ducky Da Vinci kits harness structured, creative activities to foster relaxation and improve mental health.</p>
+    </div>
+  </section>
+
+  <!-- HOW TO ORDER -->
+  <section class="section how" id="how">
+    <span class="eyebrow-text" data-en="THREE LITTLE STEPS" data-ar="٣ خطوات بسيطة">THREE LITTLE STEPS</span>
+    <h2 data-en="Easy as <em>one, two, three.</em>" data-ar="بسهولة <em>واحد، اتنين، تلاتة.</em>">Easy as <em>one, two, three.</em></h2>
+    <div class="steps">
+      <article>
+        <b>01</b>
+        <h3 data-en="Pick your design" data-ar="اختار تصميمك">Pick your design</h3>
+        <p data-en="Choose from our 10 curated kits (30×40, 40×60, or 50×80 cm)." data-ar="اختار من بين 10 لوحات مميزة بمقاسات مختلفة.">Choose from our 10 curated kits (30×40, 40×60, or 50×80 cm).</p>
+      </article>
+      <article>
+        <b>02</b>
+        <h3 data-en="Add it to your bag" data-ar="ضيفه للسلة">Add it to your bag</h3>
+        <p data-en="Choose your kits and quantities." data-ar="اختار المجموعات والكميات.">Choose your kits and quantities.</p>
+      </article>
+      <article>
+        <b>03</b>
+        <h3 data-en="Order on WhatsApp" data-ar="أكد طلبك على واتساب">Order on WhatsApp</h3>
+        <p data-en="Share your delivery details. No online payment required." data-ar="ابعت بيانات التوصيل. مفيش دفع أونلاين.">Share your delivery details. No online payment required.</p>
+      </article>
+    </div>
+  </section>
 </main>
-<footer><a class="brand" href="#"><span class="brand-mark">D</span><span>DUCKY <b>DaVinci</b><small>MAKE ART, YOUR WAY</small></span></a><span>© <span id="year"></span> Ducky DaVinci</span><span data-en="Made with a little extra colour." data-ar="اتعمل بحب وألوان كتير.">Made with a little extra colour.</span></footer>
-<div class="overlay" id="overlay"></div>
-<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
-  <div class="drawer-head"><h2 data-en="Your bag" data-ar="سلة مشترياتك">Your bag</h2><button id="cartClose" class="close">×</button></div>
-  <div id="cartItems" class="cart-items"><p class="empty" data-en="Your bag is waiting for some colour." data-ar="السلة مستنية شوية ألوان.">Your bag is waiting for some colour.</p></div>
-  <div class="cart-foot"><div class="total-line"><span data-en="Subtotal" data-ar="الإجمالي">Subtotal</span><b id="subtotal">To be confirmed</b></div><button class="primary-btn full" id="checkoutBtn" data-en="Continue to order ↗" data-ar="كمّل بيانات الطلب ↗">Continue to order ↗</button><small data-en="No online payment. You will confirm your order through WhatsApp." data-ar="مفيش دفع أونلاين. تأكيد الطلب هيكون عن طريق واتساب.">No online payment. You will confirm your order through WhatsApp.</small></div>
+
+<footer>
+  <a class="brand" href="#">
+    <img src="images/logo.jpg" alt="Ducky Da Vinci Logo" class="brand-logo">
+    <span>DUCKY <b>DaVinci</b><small>PAINTING KITS</small></span>
+  </a>
+  <span>© <span id="year"></span> Ducky DaVinci — Every Colour Tells a Tale</span>
+  <a href="admin.html">Store dashboard ↗</a>
+</footer>
+
+<div id="shade" class="shade"></div>
+<aside id="cartDrawer" class="drawer">
+  <div class="drawer-head">
+    <h2 data-en="Your bag" data-ar="سلتك">Your bag</h2>
+    <button id="closeCart" class="close">×</button>
+  </div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="drawer-bottom">
+    <div class="subtotal"><span data-en="Subtotal" data-ar="الإجمالي">Subtotal</span><b id="subtotal">—</b></div>
+    <button id="checkout" class="btn dark-btn full" data-en="Continue to checkout ↗" data-ar="كمّل الطلب ↗">Continue to checkout ↗</button>
+    <small data-en="No online payment. Order confirmation happens on WhatsApp." data-ar="مفيش دفع أونلاين. تأكيد الطلب عن طريق واتساب.">No online payment. Order confirmation happens on WhatsApp.</small>
+  </div>
 </aside>
-<div class="modal" id="checkoutModal">
-  <div class="modal-head"><div><span class="eyebrow">ALMOST THERE!</span><h2 data-en="Where should we send it?" data-ar="نبعت الأوردر فين؟">Where should we send it?</h2></div><button class="close" id="modalClose">×</button></div>
+
+<div id="detailsModal" class="modal">
+  <button class="close modal-close" id="closeDetails">×</button>
+  <div id="detailsBody"></div>
+</div>
+
+<div id="checkoutModal" class="modal checkout-modal">
+  <div class="modal-head">
+    <div>
+      <span class="eyebrow-text">ALMOST THERE</span>
+      <h2 data-en="Delivery details" data-ar="بيانات التوصيل">Delivery details</h2>
+    </div>
+    <button class="close" id="closeCheckout">×</button>
+  </div>
   <form id="orderForm">
-    <label><span data-en="Full name" data-ar="الاسم بالكامل">Full name</span><input name="name" required placeholder="Your name / اسمك"></label>
-    <label><span data-en="Mobile number" data-ar="رقم الموبايل">Mobile number</span><input name="phone" required inputmode="tel" placeholder="01xxxxxxxxx"></label>
-    <div class="form-row"><label><span data-en="Governorate" data-ar="المحافظة">Governorate</span><input name="governorate" required></label><label><span data-en="Area" data-ar="المنطقة">Area</span><input name="area" required></label></div>
-    <label><span data-en="Full address" data-ar="العنوان بالتفصيل">Full address</span><textarea name="address" required rows="2"></textarea></label>
+    <label><span data-en="Full name" data-ar="الاسم بالكامل">Full name</span><input name="name" required></label>
+    <label><span data-en="Mobile number" data-ar="رقم الموبايل">Mobile number</span><input name="phone" required inputmode="tel"></label>
+    <div class="form-row">
+      <label><span data-en="Governorate" data-ar="المحافظة">Governorate</span><input name="governorate" required></label>
+      <label><span data-en="Area" data-ar="المنطقة">Area</span><input name="area" required></label>
+    </div>
+    <label><span data-en="Full address" data-ar="العنوان بالتفصيل">Full address</span><textarea name="address" rows="2" required></textarea></label>
     <label><span data-en="Notes (optional)" data-ar="ملاحظات (اختياري)">Notes (optional)</span><textarea name="notes" rows="2"></textarea></label>
-    <button class="primary-btn full" type="submit" data-en="Send order on WhatsApp ↗" data-ar="ابعت الطلب على واتساب ↗">Send order on WhatsApp ↗</button>
-    <p class="form-hint" data-en="Your WhatsApp app will open with your order details ready to send." data-ar="واتساب هيفتح برسالة فيها تفاصيل طلبك جاهزة للإرسال.">Your WhatsApp app will open with your order details ready to send.</p>
+    <button class="btn pink-btn full" type="submit" data-en="Send order on WhatsApp ↗" data-ar="ابعت الطلب على واتساب ↗">Send order on WhatsApp ↗</button>
+    <small class="form-note" data-en="WhatsApp opens with your order details ready to send." data-ar="واتساب هيفتح برسالة فيها تفاصيل طلبك جاهزة للإرسال.">WhatsApp opens with your order details ready to send.</small>
   </form>
 </div>
-<script src="products.js"></script><script src="app.js"></script>
-</body></html>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

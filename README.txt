@@ -1,32 +1,24 @@
-DUCKY DAVINCI WEBSITE — QUICK SETUP
+DUCKY DAVINCI — REDESIGNED STOREFRONT
 
-FILES
-- index.html: website structure
-- styles.css: colours, layout and responsive styling
-- products.js: edit product names, descriptions, prices and image paths
-- app.js: cart, language toggle, order form and WhatsApp number
-- images/: put your product photos here
+Included:
+- index.html, styles.css, app.js: bilingual colourful storefront
+- products.js: catalogue data (21 starter entries; edit/remove placeholders)
+- admin.html, admin.css, admin.js: visual product dashboard
+- images/: upload product photos here
 
-BEFORE PUBLISHING
-1) Open app.js and the store WhatsApp number is already set to 201229101276.
-   Use Egypt country code format without +, spaces, or leading zero. Example format: 2010xxxxxxx.
-2) Open products.js and set each product price in EGP (number only, e.g. 450).
-3) Put each product image in images/ using product-01.jpg through product-20.jpg.
-   If an image is missing, a coloured placeholder appears.
-4) Edit product names/descriptions in products.js.
-5) Open index.html in a browser to preview.
+WhatsApp:
+The order number is set in app.js as 201229101276 (international format without +).
+Orders are not paid online. Customer details and cart are composed into a WhatsApp message; the customer must press Send in WhatsApp.
 
-ORDER FLOW
-Customers add products to cart, enter contact and delivery details, then WhatsApp opens with the full order message. No online payment is collected.
-Cart contents are stored in the visitor's browser. Orders are not saved to a central database; the customer must press Send in WhatsApp.
+Dashboard workflow:
+1. Open your published site and go to /admin.html.
+2. Add/edit/delete products. Set English and Arabic names, category, price, descriptions, details and image path.
+3. Dashboard changes are stored only in that browser's local storage.
+4. Click Export products.js to download the updated catalogue.
+5. In GitHub, open products.js in your repository. Use Add file > Upload files to upload the downloaded products.js and commit the change (or replace the file using the GitHub editor).
+6. Upload product photos separately into the images folder. Use paths such as images/product-01.jpg.
+7. Your GitHub-connected static hosting should redeploy automatically after commit.
 
-PUBLISH FREE
-Recommended: Cloudflare Pages with Git integration.
-- Create a free GitHub account and a new repository.
-- Upload these files to the repository root.
-- In Cloudflare Dashboard choose Workers & Pages > Create application > Pages > Connect to Git.
-- Connect GitHub, choose the repository, leave build command empty, set output directory to / (or the repository root as prompted), then deploy.
-- Cloudflare provides a free *.pages.dev address.
-
-IMPORTANT
-This is a static storefront. It does not have an admin dashboard or central order database. Product edits are made in products.js and images folder, then redeployed. For a visual product editor/admin panel later, a separate backend or CMS is needed.
+Important:
+This is a static site. The dashboard is a local visual editor, not a private cloud admin system. Edits are not automatically shared with other devices or visitors until the exported products.js is committed to GitHub. Anyone who knows /admin.html can open the editor; do not enter confidential information there. A genuinely private dashboard with instant shared updates requires authentication and a database/backend.
+The images folder is intentionally empty: insert your actual product photos. Placeholder designs use colourful graphic artwork until photos are uploaded.
